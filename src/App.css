@@ -177,4 +177,8 @@ button:hover {
   .calculator {
     width: 50vw;
   }
+  .operators button {
+    align-items: center;
+  }
+  
 }
