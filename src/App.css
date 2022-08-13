@@ -103,6 +103,7 @@ button:hover {
   background-color: #49C3D2;
   color: white;
   font-weight: 700;
+  align-items: center;
 }
 
 .digits {
