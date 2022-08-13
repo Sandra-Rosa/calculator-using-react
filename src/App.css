@@ -180,5 +180,8 @@ button:hover {
   .operators button {
     align-items: center;
   }
+  button {
+    font-size: 12px;
+  }
   
 }
