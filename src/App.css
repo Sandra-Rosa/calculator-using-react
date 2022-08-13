@@ -2,146 +2,172 @@
   overflow-x: hidden;
   position: relative;
 }
+
 .App {
   text-align: center;
   overflow-x: hidden;
 }
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.nav{
+.Calculator1 .nav {
   font-family: 'Allison';
-font-style: normal;
-font-weight: 400;
-font-size: 30px;
-line-height: 38px;
-color: #49ADBA;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+  color: #49ADBA;
 
 }
-.main {
+
+.Calculator1 .main {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   justify-content: center;
 }
 
-  .girl {
-    flex: 1;
-    width: 30vw;
-    height: auto;
-  }
-  .content {
-    flex: 1;
-    display: flex;
+.main .girl {
+  flex: 1;
+  width: 30vw;
+  height: auto;
+}
+
+.main .content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-left: 40px;
+  margin-bottom: 200px;
+  justify-content: space-evenly;
+}
+
+.content .Heading {
+  font-family: 'Aldrich';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 110%;
+  color: #49ADBA;
+}
+
+.content .calculator {
+  width: 30vw;
+  background-color: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0px 2px 64px rgba(0, 0, 0, 0.2);
+}
+
+.calculator .display {
+  padding: 16px;
+  text-align: right;
+  background-color: #49ADBA;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.display span {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.51);
+}
+
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  color: #49ADBA;
+  font-size: 14px;
+  padding: 16px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+button:hover {
+  opacity: 50%;
+}
+
+.calculator .operators {
+  display: flex;
+
+}
+
+.operators button {
+  flex: 1 1 0%;
+  background-color: #49C3D2;
+  color: white;
+  font-weight: 700;
+}
+
+.calculator .digits {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.calculator .digits button {
+  flex: 1 1 33.333%;
+  max-width: 33.333%;
+  font-size: 15px;
+}
+
+@media screen and (max-width:900px) {
+  .main {
     flex-direction: column;
+  }
+
+  .Calculator1 {
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .content {
     align-self: center;
-    margin-left: 40px;
-    margin-bottom: 200px;
-    justify-content: space-evenly;
   }
-  .content .Heading{
-    font-family: 'Aldrich';
-font-style: normal;
-font-weight: 400;
-font-size: 64px;
-line-height: 110%;
-color: #49ADBA;
-  }
-  .calculator{
-    width:30vw;
-   background-color:white;
-   border-radius:16px;
-   overflow:hidden;
-   box-shadow:0px 2px 64px rgba(0, 0, 0, 0.2);
-  }
-  .display{
-    padding:16px;
-    text-align:right;
-    background-color: #49ADBA;
-    color:#fff;
-    font-size: 24px;
-    font-weight:300;
-  }
-  .display span{
-    font-size:14px;
-    color: rgba(255, 255, 255, 0.51);
-  }
-  button{
-    appearance: none;
-    border:none;
-    outline:none;
-    color:#49ADBA;
-    font-size:14px;
-    padding:16px;
-    cursor:pointer;
-    transition:0.4s;
-  }
-  button:hover{
-    opacity:50%;
-  }
-  .operators{
-    display:flex;
 
+  .girl {
+    width: 90vw;
   }
-  .operators button{
-    flex:1 1 0%;
-    background-color:#49C3D2;
-    color:white;
-    font-weight:700;
-  }
-  .digits{
-    display:flex;
-    flex-wrap:wrap;
 
+  .nav {
+    font-size: 30px;
+    margin-left: 25%;
   }
-  .digits button{
-    flex:1 1 33.333%;
-    max-width:33.333%;
-    font-size:15px;
+
+  .calculator {
+    width: 50vw;
   }
-  @media screen and (max-width:900px){
-    .main{
-      flex-direction: column;
-    }
-    .Calculator1{
-      padding:0;
-      overflow: hidden;
-    }
-    .content{
-      align-self: center;
-    }
-    .girl{
-      width:90vw;
-    }.nav{
-      font-size:30px;
-      margin-left: 25%;
-    }
-    .calculator{
-      width:50vw;
-    }
+}
+
+@media screen and (max-width:600px) {
+  .nav {
+    font-size: 25px;
+    margin-left: 25%;
   }
-  @media screen and (max-width:600px){
-    .nav{
-      font-size:25px;
-      margin-left: 25%;
-    }
-    .content .Heading{
-      font-size:35px;
-      align-self: center;
-    }
-    .girl{
-      width:90vw;
-    }
+
+  .content .Heading {
+    font-size: 35px;
+    align-self: center;
   }
-  @media screen and (max-width:400px){
-    .nav{
-      font-size: 20px;
-      margin-left: 25%;
-    }
-    .content .heading{
-      font-size:30px;
-    }
+
+  .girl {
+    width: 90vw;
   }
+}
+
+@media screen and (max-width:400px) {
+  .nav {
+    font-size: 20px;
+    margin-left: 25%;
+  }
+
+  .content .heading {
+    font-size: 30px;
+  }
+}
