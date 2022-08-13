@@ -1,3 +1,17 @@
+.body {
+  overflow-x: hidden;
+  position: relative;
+}
+.App {
+  text-align: center;
+  overflow-x: hidden;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
 .nav{
   font-family: 'Allison';
 font-style: normal;
@@ -35,4 +49,99 @@ font-weight: 400;
 font-size: 64px;
 line-height: 110%;
 color: #49ADBA;
+  }
+  .calculator{
+    width:30vw;
+   background-color:white;
+   border-radius:16px;
+   overflow:hidden;
+   box-shadow:0px 2px 64px rgba(0, 0, 0, 0.2);
+  }
+  .display{
+    padding:16px;
+    text-align:right;
+    background-color: #49ADBA;
+    color:#fff;
+    font-size: 24px;
+    font-weight:300;
+  }
+  .display span{
+    font-size:14px;
+    color: rgba(255, 255, 255, 0.51);
+  }
+  button{
+    appearance: none;
+    border:none;
+    outline:none;
+    color:#49ADBA;
+    font-size:14px;
+    padding:16px;
+    cursor:pointer;
+    transition:0.4s;
+  }
+  button:hover{
+    opacity:50%;
+  }
+  .operators{
+    display:flex;
+
+  }
+  .operators button{
+    flex:1 1 0%;
+    background-color:#49C3D2;
+    color:white;
+    font-weight:700;
+  }
+  .digits{
+    display:flex;
+    flex-wrap:wrap;
+
+  }
+  .digits button{
+    flex:1 1 33.333%;
+    max-width:33.333%;
+    font-size:15px;
+  }
+  @media screen and (max-width:900px){
+    .main{
+      flex-direction: column;
+    }
+    .Calculator1{
+      padding:0;
+      overflow: hidden;
+    }
+    .content{
+      align-self: center;
+    }
+    .girl{
+      width:90vw;
+    }.nav{
+      font-size:30px;
+      margin-left: 25%;
+    }
+    .calculator{
+      width:50vw;
+    }
+  }
+  @media screen and (max-width:600px){
+    .nav{
+      font-size:25px;
+      margin-left: 25%;
+    }
+    .content .Heading{
+      font-size:35px;
+      align-self: center;
+    }
+    .girl{
+      width:90vw;
+    }
+  }
+  @media screen and (max-width:400px){
+    .nav{
+      font-size: 20px;
+      margin-left: 25%;
+    }
+    .content .heading{
+      font-size:30px;
+    }
   }
