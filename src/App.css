@@ -160,6 +160,9 @@ button:hover {
   .girl {
     width: 90vw;
   }
+  .calculator {
+    width: 50vw;
+  }
 }
 
 @media screen and (max-width:400px) {
@@ -170,5 +173,8 @@ button:hover {
 
   .heading {
     font-size: 30px;
+  }
+  .calculator {
+    width: 50vw;
   }
 }
