@@ -175,13 +175,13 @@ button:hover {
     font-size: 30px;
   }
   .calculator {
-    width: 50vw;
+    width: 60vw;
   }
   .operators button {
     align-items: center;
   }
   button {
-    font-size: 12px;
+    font-size: 10px;
   }
   
 }
