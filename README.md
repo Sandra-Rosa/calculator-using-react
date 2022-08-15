@@ -1,3 +1,7 @@
+# Online Calculator using React js
+<img src='https://github.com/Sandra-Rosa/Resposnive_website_using_React/blob/4c0d1eca02d8d2e585e7166ff79c8059d83252cf/Responsive-website.jpeg?raw=true'>
+<a href="https://heartfelt-longma-039f73.netlify.app/" target="_blank">View Online calculator</a>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
