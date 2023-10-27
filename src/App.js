@@ -14,11 +14,11 @@ function App() {
     }
     setCalc(calc + value);
     if (!ops.includes(value)) {
-      setResult(eval(calc + value).toString())
+      setResult(eval((calc + value).toFixed(2)).toString())
     }
   }
   const calculate = () => {
-    setCalc(eval(calc).toString());
+    setCalc(eval(calc).toFixed(2).toString());
   }
   const deleteLast = () => {
     if (calc === '') {
